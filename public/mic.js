@@ -20,7 +20,7 @@
         console.log('realAudioInput.onended')
       }
 
-      hijack = audioContext.createScriptProcessor(4*1024, 1, 1);
+      hijack = audioContext.createScriptProcessor(2*1024, 1, 1);
 
       hijack.onaudioprocess = function(e){
         var data = e.inputBuffer.getChannelData(0);

@@ -35,10 +35,4 @@
       console.log('stream end');
     });
   });
-
-  fileinput.addEventListener('change', function(event){
-    var file = event.target.files[0];
-    client.send(file);
-  }, false);
-
 })();
